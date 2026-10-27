@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Add a debrid service",
+        "description": "Which account do you want to track? Each service is added separately and gets its own device.",
+        "menu_options": {
+          "realdebrid": "Real-Debrid",
+          "alldebrid": "AllDebrid",
+          "torbox": "TorBox"
+        }
+      },
+      "realdebrid": {
+        "title": "Real-Debrid",
+        "description": "Paste your private {servicio} token. Get one at {donde}",
+        "data": {"clave": "Private token"}
+      },
+      "alldebrid": {
+        "title": "AllDebrid",
+        "description": "Paste your {servicio} API key. Get one at {donde}",
+        "data": {"clave": "API key"}
+      },
+      "torbox": {
+        "title": "TorBox",
+        "description": "Paste your {servicio} API key. Get one at {donde}",
+        "data": {"clave": "API key"}
+      }
+    },
+    "error": {
+      "clave_vacia": "The key cannot be empty.",
+      "clave_invalida": "The API does not accept that key."
+    },
+    "abort": {
+      "already_configured": "That service is already configured.",
+      "todos_configurados": "All three services are already configured."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "dias_restantes": {"name": "Days left"},
+      "caduca": {"name": "Expires on"},
+      "puntos": {"name": "Fidelity points"}
+    },
+    "binary_sensor": {
+      "premium": {"name": "Premium"}
+    }
+  }
+}

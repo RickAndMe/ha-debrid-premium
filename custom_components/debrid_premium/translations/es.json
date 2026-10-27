@@ -1,0 +1,48 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Añadir servicio debrid",
+        "description": "¿Qué cuenta quieres vigilar? Cada servicio se añade por separado y crea su propio dispositivo.",
+        "menu_options": {
+          "realdebrid": "Real-Debrid",
+          "alldebrid": "AllDebrid",
+          "torbox": "TorBox"
+        }
+      },
+      "realdebrid": {
+        "title": "Real-Debrid",
+        "description": "Pega tu token privado de {servicio}. Lo generas en {donde}",
+        "data": {"clave": "Token privado"}
+      },
+      "alldebrid": {
+        "title": "AllDebrid",
+        "description": "Pega tu clave de API de {servicio}. La generas en {donde}",
+        "data": {"clave": "Clave de API"}
+      },
+      "torbox": {
+        "title": "TorBox",
+        "description": "Pega tu clave de API de {servicio}. La generas en {donde}",
+        "data": {"clave": "Clave de API"}
+      }
+    },
+    "error": {
+      "clave_vacia": "La clave no puede estar vacía.",
+      "clave_invalida": "La API no acepta esa clave."
+    },
+    "abort": {
+      "already_configured": "Ese servicio ya está configurado.",
+      "todos_configurados": "Los tres servicios ya están configurados."
+    }
+  },
+  "entity": {
+    "sensor": {
+      "dias_restantes": {"name": "Días que quedan"},
+      "caduca": {"name": "Caduca el"},
+      "puntos": {"name": "Puntos de fidelidad"}
+    },
+    "binary_sensor": {
+      "premium": {"name": "Premium"}
+    }
+  }
+}
